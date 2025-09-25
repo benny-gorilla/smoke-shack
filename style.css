@@ -54,7 +54,7 @@
     .catbtn.active { background: var(--primary); border-color: var(--primary); }
 
     /* Content area */
-    #content { height: 100%; overflow: hidden; }
+    #content { height: 100%; overflow: hidden; width: 70%; }
 
     /* Top bar */
     .topbar {
@@ -63,7 +63,7 @@
       background: var(--bg-dark); position:sticky; top:0;
     }
     /* Topbar title bigger */
-.topbar h2 { font-size: clamp(20px, 3.2vh, 28px); }
+.topbar h2 { font-size: clamp(20px, 3.2vh, 28px); width: 100%; }
 
     /* Items list */
     .itemsList { padding: 1rem; display:flex; flex-direction:column; gap: .75rem; height: calc(100% - 64px); overflow: auto; }
