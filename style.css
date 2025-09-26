@@ -57,7 +57,7 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
   font-size: clamp(16px, 2.4vh, 22px);
   min-height: 120px;               /* big touch area */
 }
-    .catbtn.active { background: var(--primary); border-color: var(--primary); }
+    .catbtn.active { background: var(--primary); border: 0 solid white; border-color: var(--primary); }
 
     /* Content area */
     #content { height: 100%; overflow: hidden; width: 70%; }
