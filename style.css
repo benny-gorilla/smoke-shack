@@ -56,8 +56,12 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
   padding: clamp(14px, 2.8vh, 20px);
   font-size: clamp(16px, 2.4vh, 22px);
   min-height: 20px;               /* big touch area */
+        background: #1f2937;
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        color: white;
 }
-    .catbtn.active { background: var(--primary); border: 0 solid white; border-color: var(--primary); color: #ffffff; }
+    .catbtn.active { background: var(--primary); border-color: var(--primary); color: #ffffff; }
 
     /* Content area */
     #content { height: 100%; overflow: hidden; width: 70%; }
@@ -66,26 +70,26 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
     .topbar {
       display:flex; align-items:center; gap:.75rem;
       padding: .9rem 1rem; border-bottom:1px solid var(--border);
-      background: var(--bg-dark); position:sticky; top:0;
+      background: var(--primary); position:sticky; top:0; max-height: 50px;
     }
     /* Topbar title bigger */
-.topbar h2 { font-size: clamp(20px, 3.2vh, 28px); width: 100%; }
+.topbar h2 { font-size: clamp(20px, 3.2vh, 28px); width: 100%; text-align: center;}
 
     /* Items list */
-    .itemsList { padding: 1rem; display:flex; flex-direction:column; gap: .75rem; height: calc(100% - 64px); overflow: auto; }
+    .itemsList { padding: 1rem; display:flex; flex-direction:row; gap: .75rem; height: calc(100% - 64px); overflow: auto; flex-wrap: wrap; justify-content: center;}
     .itemRow {
-      display:flex; justify-content:center; align-items:center; gap: 1rem;
-      padding: 1rem; background:#111827; padding: clamp(12px, 2.2vh, 18px); border:1px solid var(--border); border-radius: calc(var(--radius) * 0.9); flex-direction:column; flex-wrap: nowrap;
+      display:flex; justify-content:space-between; align-items:center; gap: 1rem;
+      padding: 1rem; background:#111827; padding: clamp(6px, 0.2vh, 8px); border:1px solid var(--border); border-radius: calc(var(--radius) * 0.7); flex-direction:column; flex-wrap: nowrap; min-width: 44%; max-height:25%;
     }
-    .itemMeta { display:flex; flex-direction:column; gap:.6rem; max-width: 60%; align-items: center; }
-    .itemMeta strong { font-size: clamp(18px, 2.6vh, 22px); font-family: 'Alfa Slab One', sans-serif; }
+    .itemMeta { display:flex; flex-direction:column; gap:.6rem; max-width: 95%; align-items: center; }
+    .itemMeta strong { font-size: clamp(12px, 2.1vh, 18px); font-family: 'Alfa Slab One', sans-serif; text-align: center; }
 
     /* Option & addon controls */
-    .opts, .addons { display:flex; flex-wrap:nowrap; gap:.5rem; align-items:center; width: 100%; align-items: center; justify-content: center; }
+    .opts, .addons { display:flex; flex-wrap:nowrap; gap:.5rem; width: 100%; align-items: center; justify-content: center; }
     .optbtn {
-      padding: clamp(8px, 1.8vh, 12px) clamp(10px, 2.2vh, 14px); border:1px solid var(--border);
-      background:#1f2937; color:#fff; border-radius: .7rem; cursor:pointer; font-size:clamp(14px, 2.2vh, 18px);
-      font-family: 'Roboto', sans-serif; min-height: 8px; min-width: 70%;
+      padding: clamp(8px, 1.2vh, 12px) clamp(10px, 1.2vh, 14px); border:1px solid var(--border);
+      background:#1f2937; color:#fff; border-radius: .7rem; cursor:pointer; font-size:clamp(12px, 2.2vh, 15px);
+      font-family: 'Roboto', sans-serif; min-height: 8px; min-width: 50%; text-align: center;
     }
     .addonbtn {
       padding: clamp(8px, 1.8vh, 12px) clamp(10px, 2.2vh, 14px); border:1px solid var(--border);
@@ -96,11 +100,11 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
     .qtyPill { min-width: 2.6rem; font-size: clamp(14px, 2.2vh, 18px);text-align:center; font-weight:700; font-family:'Roboto', sans-serif; }
 
     /* Price & add */
-    .priceTag { font-weight:800; font-size: clamp(18px, 3vh, 24px); font-family:'Roboto', sans-serif; }
+    .priceTag { font-weight:800; font-size: clamp(12px, 2.6vh, 20px); font-family:'Roboto', sans-serif; }
     .addbtn {
-      padding: .3rem 1rem; border-radius: .8rem; border:1px solid var(--border);
+      padding: .3rem 1rem; border-radius: .4rem; border:1px solid var(--border);
       background: var(--accent); color:#052e22; font-weight:800; cursor:pointer;
-      font-family:'Roboto', sans-serif; font-size: clamp(16px, 2.6vh, 20px); min-height: 8px; min-width: 70%;
+      font-family:'Roboto', sans-serif; font-size: clamp(14px, 2.6vh, 18px); min-height: 8px; min-width: 30%;
     }
 
     /* Checkout dialog */
