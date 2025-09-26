@@ -13,20 +13,26 @@
     /* Base typography */
     html, body { height: 100vh; overflow: hidden; overscroll-behavior: none; }
     * { -webkit-text-size-adjust: 100%; }
-    /* Prevent browser's touch gestures from triggering zoom */
-    body, button { touch-action: manipulation; }
-    button, a, input, select, textarea { font-size: 16px; touch-action: manipulation; }
+    /* Critical: let taps behave like clicks; prevents double-tap zoom */
+html, body,
+button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
+#viewCheckoutBtn, #clearBtn {
+  touch-action: manipulation;      /* allows taps, blocks double-tap zoom */
+  -webkit-tap-highlight-color: transparent; /* remove gray flash on Android */
+}
     body {
       color:#fff;
       font-family: 'Roboto', sans-serif;   /* default font */
       font-weight: 400;
-      background-position:center; background-size:cover; background-repeat:no-repeat;
+      background-position:center; background-size:cover; background-repeat:no-repeat; -webkit-user-select: none; user-select: none; 
     }
     h1, h2, h3, .slab, #viewTitle, .catbtn {
       font-family: 'Alfa Slab One', serif; /* titles & category buttons */
       font-weight: 400;                     /* Alfa has a single weight */
       letter-spacing: .5px;
     }
+button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
+#viewCheckoutBtn, #clearBtn { font-size: 18px; }
     strong { font-weight: 700; }            /* Roboto bold */
 
     /* App shell: sidebar 30%, content 70%, bottom bar space */
