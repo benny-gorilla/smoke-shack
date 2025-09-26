@@ -6,7 +6,7 @@
       --bg-dark: rgba(11,16,32,0.9);
       --panel: rgba(17,24,39,0.9);
       --border: #374151;
-      --primary: #2563eb;
+      --primary: linear-gradient(180deg,rgba(210, 87, 5, 1) 0%, rgba(186, 39, 2, 1) 100%);
       --accent: #10b981;
     }
 
