@@ -82,7 +82,7 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
       padding: 1rem; background:#111827; padding: clamp(6px, 0.2vh, 8px); border:1px solid var(--border); border-radius: calc(var(--radius) * 0.7); flex-direction:column; flex-wrap: nowrap; max-width: 100%; max-height:40vh;
     }
     .itemMeta { display:flex; flex-direction:column; gap:.6rem; max-width: 50vw; align-items: center; }
-    .itemMeta strong { font-size: clamp(12px, 2.1vh, 18px); font-family: 'Alfa Slab One', sans-serif; text-align: center; }
+    .itemMeta .itemtitle { font-size: clamp(12px, 2.1vh, 18px); font-family: 'Alfa Slab One', sans-serif; text-align: center; width: 94%;}
 
     /* Option & addon controls */
     .opts, .addons { display:flex; flex-wrap:nowrap; gap:.5rem; width: 100%; align-items: center; justify-content: center; }
