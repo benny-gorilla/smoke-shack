@@ -55,7 +55,7 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
     .catbtn {
   padding: clamp(4px, 1vh, 10px);
   font-size: clamp(6px, 1.8vh, 22px);
-  height: 50px;               /* big touch area */
+  height: 8vh;               /* big touch area */
         background: #1f2937;
         border: 1px solid var(--border);
         border-radius: 4px;
