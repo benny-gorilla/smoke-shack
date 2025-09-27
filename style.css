@@ -79,9 +79,9 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
     .itemsList { padding: 1rem; display:flex; flex-direction:row; gap: .4rem; max-height: 200vh; overflow: auto; flex-wrap: wrap; justify-content: flex-start; max-width:59vw; }
     .itemRow {
       display:flex; justify-content:space-between; align-items:center; gap: 1rem;
-      padding: 1rem; background:#111827; padding: clamp(6px, 0.2vh, 8px); border:1px solid var(--border); border-radius: calc(var(--radius) * 0.7); flex-direction:column; flex-wrap: nowrap; max-width: 100%; max-height:40vh;
+      padding: 1rem; background:#111827; padding: clamp(6px, 0.2vh, 8px); border:1px solid var(--border); border-radius: calc(var(--radius) * 0.7); flex-direction:column; flex-wrap: nowrap; width: 100%; max-height:40vh;
     }
-    .itemMeta { display:flex; flex-direction:column; gap:.6rem; max-width: 50vw; align-items: center; }
+    .itemMeta { display:flex; flex-direction:column; gap:.6rem; align-items: center; }
     .itemMeta .itemtitle { font-size: clamp(12px, 2.1vh, 18px); font-family: 'Alfa Slab One', sans-serif; text-align: center; width: 100%;}
 
     /* Option & addon controls */
