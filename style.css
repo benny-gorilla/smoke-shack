@@ -64,19 +64,19 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
     .catbtn.active { background: var(--primary); border-color: var(--primary); color: #ffffff; }
 
     /* Content area */
-    #content { height: 90vh; overflow: auto; width: 70vw; }
+    #content { height: 85vh; overflow: auto; max-width: 70vw; }
 
     /* Top bar */
     .topbar {
       display:flex; align-items:center; gap:.75rem;
       padding: .9rem 1rem; border-bottom:1px solid var(--border);
-      background: var(--primary); position:sticky; top:0; max-height: 50px; width: 70vw;
+      background: var(--primary); position:sticky; top:0; max-height: 50px; width: auto;
     }
     /* Topbar title bigger */
 .topbar h2 { font-size: clamp(13px, 2.2vh, 24px); width: 100%; text-align: center;}
 
     /* Items list */
-    .itemsList { padding: 1rem; display:flex; flex-direction:row; gap: .75rem; height: calc(100% - 64px); overflow: auto; flex-wrap: wrap; justify-content: center; max-width:74%; }
+    .itemsList { padding: 1rem; display:flex; flex-direction:row; gap: .75rem; height: calc(100% - 64px); overflow: auto; flex-wrap: wrap; justify-content: center; width:auto; }
     .itemRow {
       display:flex; justify-content:space-between; align-items:center; gap: 1rem;
       padding: 1rem; background:#111827; padding: clamp(6px, 0.2vh, 8px); border:1px solid var(--border); border-radius: calc(var(--radius) * 0.7); flex-direction:column; flex-wrap: nowrap; min-width: 20%;max-width: 100%; max-height:25%;
@@ -117,13 +117,12 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
 
     /* Bottom bar */
     #bottombar {
-      position: fixed; left:0; right:0; bottom:0;height: clamp(58px, 8vh, 78px);
+      position: fixed; left:0; right:0; bottom:0;height: 12.5vh;
       display:flex; align-items:center; gap:.4rem;
       padding: .6rem .8rem; background: var(--bg-dark); border-top:1px solid var(--border); flex-wrap:wrap; flex-direction:row; align-content: center; justify-content: center;
     }
     #footerbuttons {
-    width: 100vw; height: 4vh; display: flex; justify-content: center; align-content: flex-start;
-    align-items: center; gap: 4vw;
+    width: 100vw; height: 6.5vh; display: flex; justify-content: center; align-items: center; gap: 4vw;
     }
     #viewCheckoutBtn, #viewOrdersBtn, #clearBtn {
       padding: .4rem .2rem; border-radius: .7rem; border:1px solid var(--border); cursor:pointer; font-weight:700;
