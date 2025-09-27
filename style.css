@@ -54,8 +54,8 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
     #catList { display:flex; flex-direction:column; gap: .3rem; position: relative; top: -2vh; }
     .catbtn {
   padding: clamp(4px, 1vh, 10px);
-  font-size: clamp(6px, 1.8vh, 22px);
-  height: 8vh;               /* big touch area */
+  font-size: clamp(6px, 1.6vh, 18px);
+  height: 6vh;               /* big touch area */
         background: #1f2937;
         border: 1px solid var(--border);
         border-radius: 4px;
