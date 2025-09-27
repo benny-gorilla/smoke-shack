@@ -70,10 +70,10 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
     .topbar {
       display:flex; align-items:center; gap:.75rem;
       padding: .9rem 1rem; border-bottom:1px solid var(--border);
-      background: var(--primary); position:sticky; top:0; max-height: 50px;
+      background: var(--primary); position:sticky; top:0; max-height: 50px; width: 70vw;
     }
     /* Topbar title bigger */
-.topbar h2 { font-size: clamp(20px, 3.2vh, 28px); width: 100%; text-align: center;}
+.topbar h2 { font-size: clamp(13px, 2.2vh, 24px); width: 100%; text-align: center;}
 
     /* Items list */
     .itemsList { padding: 1rem; display:flex; flex-direction:row; gap: .75rem; height: calc(100% - 64px); overflow: auto; flex-wrap: wrap; justify-content: center; max-width:74%; }
