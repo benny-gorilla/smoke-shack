@@ -46,7 +46,7 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
       padding: var(--pad);
       position: sticky; top:0; height:100vh;
     }
-#sidebar.appver { position: absolute; top:.5vh; left:1vw; font-size: 10%; }
+#sidebar .appver { position: absolute; top:.5vh; left:1vw; font-size: 10%; }
     #sidebar .logo { display:flex; justify-content:center; margin-bottom: 0.5rem; }
     #sidebar .logo img { width: 26vw; max-width: 160px; aspect-ratio:1/1; object-fit:contain; }
 
