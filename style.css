@@ -40,7 +40,7 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
 
     /* Sidebar (30% width) */
     #sidebar {
-      width: 30vw;
+      width: 29vw;
       background: var(--panel);
       border-right: 1px solid var(--border);
       padding: var(--pad);
