@@ -64,7 +64,7 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
     .catbtn.active { background: var(--primary); border-color: var(--primary); color: #ffffff; }
 
     /* Content area */
-    #content { height: 85vh; overflow: auto; width: 70vw; }
+    #content { height: 85vh; overflow: auto; width: 67.5vw; }
 
     /* Top bar */
     .topbar {
