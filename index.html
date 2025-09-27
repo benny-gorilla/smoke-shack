@@ -42,6 +42,43 @@
         src="https://script.google.com/macros/s/AKfycbzZGSgLfbR9RPBvc1fpV7C2DoLY5Fn3eR1oschw3GSxSlre8OkjeBtTNlicUvmPN6Mm6Q/exec"
         allowfullscreen
         referrerpolicy="no-referrer">
+      
 </iframe>
+    <script>
+const iframe = document.getElementById('app');
+
+// Send a command to the iframe
+function sendToIframe(cmd, payload) {
+  iframe.contentWindow.postMessage({ source: 'wrapper', cmd, payload }, '*');
+}
+
+// Listen for responses from the iframe
+window.addEventListener('message', (e) => {
+  // Only accept messages from Apps Script
+  if (!e.origin.includes('script.google.com')) return;
+  const msg = e.data || {};
+  if (msg.source !== 'iframe') return;
+
+  if (msg.event === 'ordersReady') {
+    console.log('Open orders:', msg.data);
+    // You could preview counts, show a toast, etc.
+  }
+  if (msg.event === 'ordersOpened') {
+    console.log('Orders dialog opened inside iframe');
+  }
+  if (msg.event === 'ordersError') {
+    console.error('Orders error:', msg.error);
+    alert('Error loading orders: ' + msg.error);
+  }
+});
+
+// Example: a wrapper-side button to open the orders dialog in the iframe
+// document.getElementById('openOrdersBtn').addEventListener('click', () => {
+//   sendToIframe('openOrdersDialog');
+// });
+
+// Example: just fetch orders (data only) from the iframe
+// sendToIframe('getOpenOrders');
+</script>
 </body>
 </html>
