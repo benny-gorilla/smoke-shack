@@ -89,7 +89,7 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
     .optbtn {
       padding: clamp(8px, 1.2vh, 12px) clamp(10px, 1.2vh, 14px); border:1px solid var(--border);
       background:#1f2937; color:#fff; border-radius: .7rem; cursor:pointer; font-size:clamp(12px, 2.2vh, 15px);
-      font-family: 'Roboto', sans-serif; min-height: 8px; min-width: 48%; text-align: center;
+      font-family: 'Roboto', sans-serif; min-height: 8px; min-width: 48%; text-align: center; font-weight:700;
     }
     .addonbtn {
       padding: clamp(8px, 1.8vh, 12px) clamp(10px, 2.2vh, 14px); border:1px solid var(--border);
@@ -101,11 +101,11 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
 
     /* Price & add */
     .priceadd {width:100%;}
-    .priceTag { font-weight:800; font-size: clamp(12px, 2.6vh, 20px); font-family:'Roboto', sans-serif; }
+    .priceTag { font-weight:800; font-size: clamp(12px, 2.6vh, 20px); font-family:'Roboto', sans-serif; width: 50%; text-align: center;}
     .addbtn {
       padding: .3rem 1rem; border-radius: .4rem; border:1px solid var(--border);
       background: var(--accent); color:#052e22; font-weight:800; cursor:pointer;
-      font-family:'Roboto', sans-serif; font-size: clamp(14px, 2.6vh, 18px); min-height: 8px; min-width: 30%;
+      font-family:'Roboto', sans-serif; font-size: clamp(14px, 2.6vh, 18px); min-height: 8px; min-width: 50%;
     }
 
     /* Checkout dialog */
@@ -114,6 +114,11 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
     .dlg-body { padding: 1rem; max-height: 60vh; overflow:auto; font-family:'Roboto', sans-serif; }
     .line { display:flex; justify-content:space-between; gap: .75rem; padding: .6rem 0; border-bottom:1px dashed var(--border); }
     .qtybtn { width: 2.2rem; height: 2.2rem; border-radius: .5rem; border:1px solid var(--border); background:#1f2937; color:#fff; cursor:pointer; font-family:'Roboto', sans-serif; }
+    #closeEmptyBtn, ordersCloseBtn {
+      padding: .3rem 1rem; border-radius: .4rem; border:1px solid var(--border);
+      background:#1f2937; color:#fff; font-weight:800; cursor:pointer;
+      font-family:'Roboto', sans-serif; font-size: clamp(14px, 2.6vh, 18px); min-height: 8px; min-width: 50%;
+    }
     .ghost { opacity: .7; font-family:'Roboto', sans-serif; }
 
     /* Bottom bar */
@@ -127,7 +132,7 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
     }
     #viewCheckoutBtn, #viewOrdersBtn, #clearBtn {
       padding: .4rem .2rem; border-radius: .7rem; border:1px solid var(--border); cursor:pointer; font-weight:700;
-      font-family:'Roboto', sans-serif; font-size: clamp(16px, 2.6vh, 20px); min-height: 8px; min-width: 25vw;
+      font-family:'Roboto', sans-serif; font-size: clamp(13px, 2vh, 17px); min-height: 6vh; min-width: 25vw;
     }
     #viewCheckoutBtn { background: var(--primary); color:#fff; }
     #clearBtn, #viewOrdersBtn { background:#1f2937; color:#fff; }
