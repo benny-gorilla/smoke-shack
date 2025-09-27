@@ -1,10 +1,10 @@
 
     :root{
       --radius: 1.1rem;
-      --gap: 1.1rem;
-      --pad: 1.2rem;
+      --gap: 0.6rem;
+      --pad: 0.8rem;
       --bg-dark: rgba(11,16,32,0.9);
-      --panel: rgba(17,24,39,0.9);
+      --panel: rgba(17,24,39,0.6);
       --border: #374151;
       --primary: linear-gradient(180deg,rgba(210, 87, 5, 1) 0%, rgba(186, 39, 2, 1) 100%);
       --accent: #10b981;
@@ -36,7 +36,7 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
     strong { font-weight: 700; }            /* Roboto bold */
 
     /* App shell: sidebar 30%, content 70%, bottom bar space */
-    .shell { display:flex; min-height:100vh; padding-bottom:64px; height: calc(100vh - clamp(58px, 8vh, 78px)); }
+    .shell { display:flex; min-height:100vh; padding-bottom:64px; position: absolute; top: 0; left: 0 }
 
     /* Sidebar (30% width) */
     #sidebar {
@@ -47,15 +47,15 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
       padding: var(--pad);
       position: sticky; top:0; height:100vh;
     }
-    #sidebar .logo { display:flex; justify-content:center; margin: 1rem auto; }
+    #sidebar .logo { display:flex; justify-content:center; margin-bottom: 0.5rem; }
     #sidebar .logo img { width: 26vw; max-width: 160px; aspect-ratio:1/1; object-fit:contain; }
 
     /* Category list */
-    #catList { display:flex; flex-direction:column; gap: .75rem; }
+    #catList { display:flex; flex-direction:column; gap: .3rem; }
     .catbtn {
-  padding: clamp(14px, 2.8vh, 20px);
-  font-size: clamp(16px, 2.4vh, 22px);
-  min-height: 20px;               /* big touch area */
+  padding: clamp(4px, 2.8vh, 10px);
+  font-size: clamp(6px, 1.4vh, 22px);
+  min-height: 50px;               /* big touch area */
         background: #1f2937;
         border: 1px solid var(--border);
         border-radius: 4px;
