@@ -40,21 +40,22 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
 
     /* Sidebar (30% width) */
     #sidebar {
-      width: 30vw;
+      width: 29vw;
       background: var(--panel);
       border-right: 1px solid var(--border);
       padding: var(--pad);
-      position: sticky; top:0; height:100vh;
+      position: sticky; top:0; height:84vh;
     }
-    #sidebar .logo { display:flex; justify-content:center; margin-bottom: 0.5rem; }
+#sidebar .appver { position: absolute; top:.5vh; left:1vw; font-size: 10%; }
+    #sidebar .logo { display:flex; justify-content:center; height:20vh; position: relative; top: -2vh; }
     #sidebar .logo img { width: 26vw; max-width: 160px; aspect-ratio:1/1; object-fit:contain; }
 
     /* Category list */
-    #catList { display:flex; flex-direction:column; gap: .3rem; }
+    #catList { display:flex; flex-direction:column; gap: .3rem; position: relative; top: -2vh; }
     .catbtn {
-  padding: clamp(4px, 2.8vh, 10px);
-  font-size: clamp(6px, 1.8vh, 22px);
-  min-height: 50px;               /* big touch area */
+  padding: clamp(4px, 1vh, 10px);
+  font-size: clamp(6px, 1.2vh, 14px);
+  height: 6.7vh;               /* big touch area */
         background: #1f2937;
         border: 1px solid var(--border);
         border-radius: 4px;
@@ -69,26 +70,26 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
     .topbar {
       display:flex; align-items:center; gap:.75rem;
       padding: .9rem 1rem; border-bottom:1px solid var(--border);
-      background: var(--primary); position:sticky; top:0; max-height: 50px;
+      background: var(--primary); position:sticky; top:0; max-height: 50px; width: auto;
     }
     /* Topbar title bigger */
-.topbar h2 { font-size: clamp(20px, 3.2vh, 28px); width: 100%; text-align: center;}
+.topbar h2 { font-size: clamp(13px, 2.2vh, 24px); width: 100%; text-align: center;}
 
     /* Items list */
-    .itemsList { padding: 1rem; display:flex; flex-direction:row; gap: .75rem; max-height: 200vh; overflow: auto; flex-wrap: wrap; justify-content: center; max-width:59vw; }
+    .itemsList { padding: 1rem; display:flex; flex-direction:row; gap: .4rem; max-height: 200vh; overflow: auto; flex-wrap: wrap; justify-content: flex-start; max-width:59vw; }
     .itemRow {
       display:flex; justify-content:space-between; align-items:center; gap: 1rem;
-      padding: 1rem; background:#111827; padding: clamp(6px, 0.2vh, 8px); border:1px solid var(--border); border-radius: calc(var(--radius) * 0.7); flex-direction:column; flex-wrap: nowrap; min-width: 20%;max-width: 100%; max-height:25%;
+      padding: 1rem; background:#111827; padding: clamp(6px, 0.2vh, 8px); border:1px solid var(--border); border-radius: calc(var(--radius) * 0.7); flex-direction:column; flex-wrap: nowrap; max-width: 100%; max-height:40vh;
     }
-    .itemMeta { display:flex; flex-direction:column; gap:.6rem; max-width: 95%; align-items: center; }
-    .itemMeta strong { font-size: clamp(12px, 2.1vh, 18px); font-family: 'Alfa Slab One', sans-serif; text-align: center; }
+    .itemMeta { display:flex; flex-direction:column; gap:.6rem; max-width: 50vw; align-items: center; }
+    .itemMeta .itemtitle { font-size: clamp(12px, 2.1vh, 18px); font-family: 'Alfa Slab One', sans-serif; text-align: center; width: 100%;}
 
     /* Option & addon controls */
-    .opts, .addons { display:flex; flex-wrap:nowrap; gap:.5rem; width: 100%; align-items: center; justify-content: center; }
+    .opts, .addons { display:flex; flex-wrap:nowrap; gap:.5rem; width: 100%; align-items: center; justify-content: space-between; }
     .optbtn {
       padding: clamp(8px, 1.2vh, 12px) clamp(10px, 1.2vh, 14px); border:1px solid var(--border);
       background:#1f2937; color:#fff; border-radius: .7rem; cursor:pointer; font-size:clamp(12px, 2.2vh, 15px);
-      font-family: 'Roboto', sans-serif; min-height: 8px; min-width: 50%; text-align: center;
+      font-family: 'Roboto', sans-serif; min-height: 8px; min-width: 48%; text-align: center; font-weight:700;
     }
     .addonbtn {
       padding: clamp(8px, 1.8vh, 12px) clamp(10px, 2.2vh, 14px); border:1px solid var(--border);
@@ -96,14 +97,15 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
       font-family: 'Roboto', sans-serif; min-height: 8px;
     }
     .optbtn.active { background: var(--primary); border-color: var(--primary); }
-    .qtyPill { min-width: 2.6rem; font-size: clamp(14px, 2.2vh, 18px);text-align:center; font-weight:700; font-family:'Roboto', sans-serif; }
+    .qtyPill { min-width: 1.3rem; font-size: clamp(14px, 2.2vh, 18px);text-align:center; font-weight:700; font-family:'Roboto', sans-serif; }
 
     /* Price & add */
-    .priceTag { font-weight:800; font-size: clamp(12px, 2.6vh, 20px); font-family:'Roboto', sans-serif; }
+    .priceadd {width:100%;}
+    .priceTag { font-weight:800; font-size: clamp(12px, 2.6vh, 20px); font-family:'Roboto', sans-serif; width: 50%; text-align: center;}
     .addbtn {
       padding: .3rem 1rem; border-radius: .4rem; border:1px solid var(--border);
       background: var(--accent); color:#052e22; font-weight:800; cursor:pointer;
-      font-family:'Roboto', sans-serif; font-size: clamp(14px, 2.6vh, 18px); min-height: 8px; min-width: 30%;
+      font-family:'Roboto', sans-serif; font-size: clamp(14px, 2.6vh, 18px); min-height: 8px; min-width: 50%;
     }
 
     /* Checkout dialog */
@@ -112,21 +114,25 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
     .dlg-body { padding: 1rem; max-height: 60vh; overflow:auto; font-family:'Roboto', sans-serif; }
     .line { display:flex; justify-content:space-between; gap: .75rem; padding: .6rem 0; border-bottom:1px dashed var(--border); }
     .qtybtn { width: 2.2rem; height: 2.2rem; border-radius: .5rem; border:1px solid var(--border); background:#1f2937; color:#fff; cursor:pointer; font-family:'Roboto', sans-serif; }
+    #closeEmptyBtn, #ordersCloseBtn {
+      padding: .3rem 1rem; border-radius: .4rem; border:1px solid var(--border);
+      background:#1f2937; color:#fff; font-weight:800; cursor:pointer;
+      font-family:'Roboto', sans-serif; font-size: clamp(14px, 2.6vh, 18px); min-height: 8px; min-width: 50%;
+    }
     .ghost { opacity: .7; font-family:'Roboto', sans-serif; }
 
     /* Bottom bar */
     #bottombar {
-      position: fixed; left:0; right:0; bottom:0;height: clamp(58px, 8vh, 78px);
+      position: fixed; left:0; right:0; bottom:0;height: 12.5vh;
       display:flex; align-items:center; gap:.4rem;
       padding: .6rem .8rem; background: var(--bg-dark); border-top:1px solid var(--border); flex-wrap:wrap; flex-direction:row; align-content: center; justify-content: center;
     }
     #footerbuttons {
-    width: 100vw; height: 4vh; display: flex; justify-content: center; align-content: flex-start;
-    align-items: center; gap: 4vw;
+    width: 100vw; height: 6.5vh; display: flex; justify-content: center; align-items: center; gap: 4vw;
     }
     #viewCheckoutBtn, #viewOrdersBtn, #clearBtn {
       padding: .4rem .2rem; border-radius: .7rem; border:1px solid var(--border); cursor:pointer; font-weight:700;
-      font-family:'Roboto', sans-serif; font-size: clamp(16px, 2.6vh, 20px); min-height: 8px; min-width: 25vw;
+      font-family:'Roboto', sans-serif; font-size: clamp(13px, 2vh, 17px); min-height: 6vh; min-width: 25vw;
     }
     #viewCheckoutBtn { background: var(--primary); color:#fff; }
     #clearBtn, #viewOrdersBtn { background:#1f2937; color:#fff; }
@@ -138,7 +144,7 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
     #splash { position:fixed; inset:0; z-index:9999; display:grid; place-items:center; background: rgba(0,0,0,0.9); }
     #splash::before { content:""; position:absolute; inset:0; background: rgba(0,0,0,0.55); }
     .splash-inner { position:relative; z-index:1; width:min(520px, 90vw); text-align:center; color:#fff; font-family:'Roboto', sans-serif; }
-    .splash-logo img { width: 22vw; max-width: 240px; aspect-ratio:1/1; object-fit:contain; }
+    .splash-logo img { width: 60vw; max-width: 240px; aspect-ratio:1/1; object-fit:contain; }
     .splash-msg { margin: 12px 0; font-size: clamp(.95rem, 3.5vw, 1.1rem); }
     .splash-bar { width:100%; height: 20px; background:#1f2937; border:1px solid var(--border); border-radius:999px; overflow:hidden; }
     .splash-fill { height:100%; width:0%; background: var(--accent); transition: width .2s linear; }
@@ -146,5 +152,5 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
     /* Mobile tweaks */
     @media (max-width: 560px){
       #sidebar .logo img { width: 28vw; }
-      .itemMeta { max-width: 58%; }
+      .itemMeta { width: 94%; }
     }
