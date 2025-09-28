@@ -51,11 +51,12 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
     #sidebar .logo img { width: 26vw; max-width: 160px; aspect-ratio:1/1; object-fit:contain; }
 
     /* Category list */
-    #catList { display:flex; flex-direction:column; gap: .3rem; position: relative; top: -2vh; }
+    #catList { display:grid; grid-auto-rows:1fr; height: 100%; }
     .catbtn {
-  padding: clamp(4px, 1vh, 10px);
-  font-size: clamp(6px, 1.2vh, 14px);
-  height: 6.7vh;               /* big touch area */
+  padding: 1vw;
+  font-size: clamp(6px, 1.6vh, 14px);
+  height: 100%; 
+  width: 100%;               /* big touch area */
         background: #1f2937;
         border: 1px solid var(--border);
         border-radius: 4px;
