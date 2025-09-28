@@ -51,7 +51,7 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
     #sidebar .logo img { width: 26vw; max-width: 160px; aspect-ratio:1/1; object-fit:contain; }
 
     /* Category list */
-    #catList { display:grid; grid-auto-rows:1fr; height: 100%; }
+    #catList { display:grid; grid-auto-rows:1fr; height: 65vh; }
     .catbtn {
   padding: 1vw;
   font-size: clamp(6px, 1.6vh, 14px);
