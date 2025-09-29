@@ -178,4 +178,8 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
   border-top-color:#fff; border-radius:50%; animation:spin 1s linear infinite; margin-bottom:.6rem;
 }
 @keyframes spin{ to{ transform:rotate(360deg) } }
+#loading[hidden] {
+  display: none !important;
+}
+
 
