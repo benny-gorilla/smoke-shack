@@ -124,9 +124,9 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
     .priceadd {width:100%;}
     .priceTag { font-weight:800; font-size: clamp(12px, 2.6vh, 20px); font-family:'Roboto', sans-serif; width: 50%; text-align: center;}
     .addbtn {
-      padding: .3rem 1rem; border-radius: .4rem; border:1px solid var(--border);
+      padding: .3vh; border-radius: .4rem; border:1px solid var(--border);
       background: var(--accent); color:#052e22; font-weight:800; cursor:pointer;
-      font-family:'Roboto', sans-serif; font-size: clamp(14px, 2.6vh, 18px); min-height: 8px; width: 50%;
+      font-family:'Roboto', sans-serif; font-size: clamp(14px, 2.6vh, 18px); height: 3vh; width: 50%;
     }
     .addbtn.loading {
   position: relative;
