@@ -157,12 +157,18 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
     dialog { border:0.6vw solid white; border-radius: 1rem; padding:0; background:#0b1020; color:#fff; max-width:560px; width:92vw; }
     .dlg-head { padding: .9rem 1rem; background:#111827; font-weight:700; display:flex; justify-content:space-between; align-items:center; font-family:'Roboto', sans-serif; }
     .dlg-body { padding: 1rem; max-height: 60vh; overflow:auto; font-family:'Roboto', sans-serif; margin-bottom:1.6vh }
-    .line { display:flex; justify-content:space-between; gap: .75rem; padding: .6rem 0; border-radius: 10px;padding: 2vw;flex-wrap: wrap; }
+    .line { display:flex; justify-content:space-between; gap: .75rem; padding: .6rem 0; border-radius: 10px;flex-wrap: wrap; }
+#ordersBody .line { flex-direction: column;}
+.linetotal {
+    /* float: right; */
+    right: 3.2vw;
+    position: absolute;
+}
     .qtybtn { width: 2.2rem; height: 2.2rem; border-radius: .5rem; border:1px solid var(--border); background:#1f2937; color:#fff; cursor:pointer; font-family:'Roboto', sans-serif; }
     #closeEmptyBtn, #ordersCloseBtn, #viewArchivedBtn, .clsbtn {
       padding: .3rem 1rem; border-radius: .4rem; border:1px solid var(--border);
       background:#1f2937; color:#fff; font-weight:800; cursor:pointer;
-      font-family:'Roboto', sans-serif; font-size: clamp(14px, 2.6vh, 18px); min-height: 8px; min-width: 30%;
+      font-family:'Roboto', sans-serif; font-size: clamp(14px, 2.6vh, 18px); height: 3vh; min-width: 30%;
     }
     .ghost { opacity: .7; font-family:'Roboto', sans-serif; }
 
