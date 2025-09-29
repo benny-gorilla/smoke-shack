@@ -71,10 +71,10 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
     .topbar {
       display:flex; align-items:center; gap:.75rem;
       padding: .9rem 1rem; border-bottom:1px solid var(--border);
-      background: var(--primary); position:sticky; top:0; max-height: 50px; width: auto;
+      background: var(--primary); position:sticky; top:0; height: 4vh; width: auto;
     }
     /* Topbar title bigger */
-.topbar h2 { font-size: clamp(13px, 2.2vh, 24px); width: 100%; text-align: center;}
+.topbar h2 { font-size: 1.8vh; width: 100%; text-align: center;}
 
     /* Items list */
     .itemsList { padding: 1rem; display:flex; flex-direction:row; gap: .4rem; max-height: 200vh; overflow: auto; flex-wrap: wrap; justify-content: flex-start; max-width:59vw; }
@@ -83,7 +83,7 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
       padding: 1rem; background:#111827; padding: 0.6vh; border:1px solid var(--border); border-radius: calc(var(--radius) * 0.7); flex-direction:column; flex-wrap: nowrap; width: 100%; max-height:40vh;
     }
     .itemMeta { display:flex; flex-direction:column; gap:.6rem; align-items: center; }
-    .itemMeta .itemtitle { font-size: clamp(12px, 2.1vh, 18px); font-family: 'Alfa Slab One', sans-serif; text-align: center; width: 100%; height: 50%;}
+    .itemMeta .itemtitle { font-size: 1.4vh; font-family: 'Alfa Slab One', sans-serif; text-align: center; width: 100%; height: 50%;}
 
     /* Option & addon controls */
 .optTitle { 
@@ -109,7 +109,17 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
     }
     .optbtn.active,.opt2btn.active { background: var(--primary); border-color: var(--primary); }
     .qtyPill { min-width: 1.3rem; font-size: clamp(14px, 2.2vh, 18px);text-align:center; font-weight:700; font-family:'Roboto', sans-serif; }
+.plusminus {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-evenly;
+}
 
+.extra_pat {
+    width: 50%;
+    text-align: center;
+}
     /* Price & add */
     .priceadd {width:100%;}
     .priceTag { font-weight:800; font-size: clamp(12px, 2.6vh, 20px); font-family:'Roboto', sans-serif; width: 50%; text-align: center;}
