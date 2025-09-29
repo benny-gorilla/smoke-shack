@@ -148,6 +148,8 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
 @keyframes spin { to { transform: rotate(360deg) } }
 .linetotal, .leftwrap {
     font-size: 1.4vh;
+    max-width:60vw;
+    justify-content: center;
 }
 #archDlg .line {display:flex;justify-content: center;gap: .75rem;flex-direction: column;background-color: grey;margin-bottom: 0.2vh;border-radius: 10px;padding: 2vw;flex-wrap: wrap;}
     #archDlg .line div {align-items: center;}
