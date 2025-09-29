@@ -117,7 +117,11 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
     }
 
     /* Checkout dialog */
-    dialog { border:none; border-radius: 1rem; padding:0; background:#0b1020; color:#fff; max-width:560px; width:92vw; }
+    dialog::backdrop {
+      background-color: rgba(0,0,0,0.6);
+      backdrop-filter: blur(0.75vh);
+    }
+    dialog { border:0.6vw solid white; border-radius: 1rem; padding:0; background:#0b1020; color:#fff; max-width:560px; width:92vw; }
     .dlg-head { padding: .9rem 1rem; background:#111827; font-weight:700; display:flex; justify-content:space-between; align-items:center; font-family:'Roboto', sans-serif; }
     .dlg-body { padding: 1rem; max-height: 60vh; overflow:auto; font-family:'Roboto', sans-serif; }
     .line { display:flex; justify-content:space-between; gap: .75rem; padding: .6rem 0; border-bottom:1px dashed var(--border); }
