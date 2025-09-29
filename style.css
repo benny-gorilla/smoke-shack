@@ -137,6 +137,8 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
 
 @keyframes spin { to { transform: rotate(360deg) } }
 
+.archDlg .line {display:flex;justify-content: center;gap: .75rem;flex-direction: column;background-color: grey;margin-bottom: 0.2vh;border-radius: 10px;padding: 2vw;flex-wrap: wrap;}
+    .archDlg .line div {align-items: center;}
     /* Checkout dialog */
     dialog::backdrop {
       background-color: rgba(0,0,0,0.6);
@@ -144,8 +146,8 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
     }
     dialog { border:0.6vw solid white; border-radius: 1rem; padding:0; background:#0b1020; color:#fff; max-width:560px; width:92vw; }
     .dlg-head { padding: .9rem 1rem; background:#111827; font-weight:700; display:flex; justify-content:space-between; align-items:center; font-family:'Roboto', sans-serif; }
-    .dlg-body { padding: 1rem; max-height: 60vh; overflow:auto; font-family:'Roboto', sans-serif; }
-    .line { display:flex; justify-content:space-between; gap: .75rem; padding: .6rem 0; border-bottom:1px dashed var(--border); }
+    .dlg-body { padding: 1rem; max-height: 60vh; overflow:auto; font-family:'Roboto', sans-serif; margin-bottom:1.6vh }
+    .line { display:flex; justify-content:space-between; gap: .75rem; padding: .6rem 0; border-radius: 10px;padding: 2vw;flex-wrap: wrap; }
     .qtybtn { width: 2.2rem; height: 2.2rem; border-radius: .5rem; border:1px solid var(--border); background:#1f2937; color:#fff; cursor:pointer; font-family:'Roboto', sans-serif; }
     #closeEmptyBtn, #ordersCloseBtn, #viewArchivedBtn {
       padding: .3rem 1rem; border-radius: .4rem; border:1px solid var(--border);
@@ -163,7 +165,7 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
     #footerbuttons {
     width: 100vw; height: 6.5vh; display: flex; justify-content: center; align-items: center; gap: 4vw;
     }
-    #viewCheckoutBtn, #viewOrdersBtn, #clearBtn {
+    #viewCheckoutBtn, #viewOrdersBtn, #clearBtn, .clsbtn {
       padding: .4rem .2rem; border-radius: .7rem; border:1px solid var(--border); cursor:pointer; font-weight:700;
       font-family:'Roboto', sans-serif; font-size: 1.6vh; min-height: 5vh; min-width: 25vw;
     }
