@@ -93,19 +93,33 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
   opacity: 1; 
 }.opts2title {
     text-align: left;
-    width: 100%;
+    width: 25%;
 }
     .opts, .addons { display:flex; flex-wrap:nowrap; gap:.5rem; width: 100%; align-items: center; justify-content: center; }
-.opts2 {display:grid;gap:.3rem;width: 100%;grid: 3vh / 30% 30% 30%;grid-auto-columns: 2fr;justify-items: center;align-items: center;justify-content: center;}
+.opts2 {display:grid;gap:.3rem;width: 100%;grid: 3vh / 31% 31% 31%;grid-auto-columns: 2fr;justify-items: center;align-items: center;justify-content: center;}
     .optbtn, .opt2btn {
       padding: 0.2vh; border:1px solid var(--border);
       background:#1f2937; color:#fff; border-radius: 4px; cursor:pointer; font-size:clamp(12px, 2.2vh, 15px);
-      font-family: 'Roboto', sans-serif; min-height: 8px; min-width: 48%; text-align: center; font-weight:700;
+      font-family: 'Roboto', sans-serif; min-height: 8px; width: 48%; text-align: center; font-weight:700;
     }
+.opt2btn {
+      width: 100%;
+    font-size: 1.4vh;
+    }
+.myopts2 {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    gap: 1vw;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
     .addonbtn {
       padding: 0.2vh; border:1px solid var(--border);
-      background:#1f2937; color:#fff; border-radius: 50%; cursor:pointer; font-size:clamp(14px, 2.2vh, 18px);
-      font-family: 'Roboto', sans-serif; width:5vw;
+      background:#1f2937; color:#fff; border-radius: 50%; cursor:pointer; font-size:1.3vh;
+      font-family: 'Roboto', sans-serif; width:5vw; height: 2.8vh;
     }
     .optbtn.active,.opt2btn.active { background: var(--primary); border-color: var(--primary); }
     .qtyPill { min-width: 1.3rem; font-size: clamp(14px, 2.2vh, 18px);text-align:center; font-weight:700; font-family:'Roboto', sans-serif; }
