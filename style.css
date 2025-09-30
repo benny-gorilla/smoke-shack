@@ -47,8 +47,8 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
       position: sticky; top:0; height:84vh;
     }
 #sidebar .appver { position: absolute; top:.5vh; left:1vw; font-size: 10%; }
-    #sidebar .logo { display:flex; justify-content:center; height:20vh; position: relative; top: -2vh; }
-    #sidebar .logo img { width: 26vw; max-width: 160px; aspect-ratio:1/1; object-fit:contain; }
+    #sidebar .logo { display:flex; justify-content:center; height:20vh; position: relative; top: -2vh; cursor: pointer; }
+    #sidebar .logo img { width: 26vw; max-width: 160px; aspect-ratio:1/1; object-fit:contain;  pointer-events:none; -webkit-user-drag:none; -webkit-touch-callout:none; user-select:none; }
 
     /* Category list */
     #catList { display:grid; grid-auto-rows:1fr; height: 65vh; gap: 0.6vh; position: relative;top: -3vh;}
