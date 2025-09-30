@@ -236,7 +236,7 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
 }
 .spinner{
   width:80px; height:80px; border:4px solid rgba(255,255,255,.3);
-  border-top-color:#fff; border-radius:50%; animation:spin 1s linear infinite; margin: 45vh auto;
+  border-top-color:#fff; border-radius:50%; animation:spin 1s linear infinite;
 }
 @keyframes spin{ to{ transform:rotate(360deg) } }
 #loading[hidden] {
