@@ -223,6 +223,13 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
       #sidebar .logo img { width: 28vw; }
       .itemMeta { width: 94%; }
     }
+.dlgLoading[hidden] { display: none; }
+.dlgLoading {
+  position:absolute; inset:0;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  background:rgba(0,0,0,.35); backdrop-filter: blur(2px);
+  border-radius: inherit; z-index: 10;
+}
 .loading{
   position:fixed; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center;
   background:rgba(0,0,0,.45); backdrop-filter: blur(2px); z-index:9999;
