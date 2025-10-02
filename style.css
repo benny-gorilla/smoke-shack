@@ -107,7 +107,6 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
 .availToggle.loading::after {
   content: "";
   position: absolute;
-  left: 46%;
   width: 18px; height: 18px;
   margin: 0 auto;
   border: 2px solid rgba(255,255,255,.5);
@@ -184,7 +183,6 @@ button, .catbtn, .optbtn, .addonbtn, .qtybtn, .addbtn,
 .addbtn.loading::after {
   content: "";
   position: absolute;
-  left: 46%;
   width: 18px; height: 18px;
   margin: 0 auto;
   border: 2px solid rgba(255,255,255,.5);
