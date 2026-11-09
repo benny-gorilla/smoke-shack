@@ -1,9 +1,9 @@
 {
-  "id": "/smokeshack/",
+  "id": "/smoke-shack/",
   "name": "Smoke Shack",
   "short_name": "Smoke Shack",
-  "start_url": "/smokeshack/index.html",
-  "scope": "/smokeshack/",
+  "start_url": "/smoke-shack/index.html",
+  "scope": "/smoke-shack/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#0b1020",
